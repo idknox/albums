@@ -1,8 +1,10 @@
 # Interview Problem
 
-This project is a starting point for ThinkTopic job applicants. The goal is to demonstrate your basic skills with git, javascript, html and a couple other common technologies. This project shouldn't take too much time but feel free to make it interesting. Whether it's js skills, python on the backend or compelling CSS and design, try to demonstrate your skills as best as possible.
+This project is a starting point for [ThinkTopic](http://thinktopic.com/) job applicants. The goal is to demonstrate your basic skills with git, javascript, html and a couple other common technologies. This project shouldn't take too much time but feel free to make it interesting. Whether it's js skills, python on the backend or compelling CSS and design, try to demonstrate your skills as best as possible.
 
-All the resources needed should be included in this project as well as references to documentation for all of the technologies used.
+All the resources needed should be included in this project as well as references to documentation for all of the technologies used. If something is missing in the documentation please let us know by creating an issue or event better a pull request. We hope this project is a fun break from the normal interview process so please also let us know any suggestions you have for future applicants.
+
+    - The ThinkTopic team
 
 ### Background
 
