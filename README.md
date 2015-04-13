@@ -4,7 +4,7 @@ This project is a starting point for [ThinkTopic](http://thinktopic.com/) job ap
 
 All the resources needed should be included in this project as well as references to documentation for all of the technologies used. If something is missing in the documentation please let us know by creating an issue or event better a pull request. We hope this project is a fun break from the normal interview process so please also let us know any suggestions you have for future applicants.
 
-    - The ThinkTopic team
+- The ThinkTopic team
 
 ### Background
 
