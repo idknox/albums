@@ -8,7 +8,7 @@
     render: function() {
       return (
         <li className="album">
-          // TODO: Add display logic to show album info
+            {this.props.album.artist}
         </li>
       );
     }
@@ -23,7 +23,10 @@
     },
 
     componentDidMount: function() {
-      // TODO: Use the api.js file to get all the available albums here and update the component
+         window.AlbumAPI.get_albums().then(function (data) {
+            console.log(data)
+            //this.setState(data);
+        });
     },
     
     render: function() {

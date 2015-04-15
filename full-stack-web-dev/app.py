@@ -32,7 +32,7 @@ ALBUMS = [
     'title': 'The Suburbs',
     'year': '2010',
     'image_url': 'https://upload.wikimedia.org/wikipedia/en/8/81/Arcade_Fire_-_The_Suburbs.jpg'
-    
+
   },
   {
     '_id': 4,
