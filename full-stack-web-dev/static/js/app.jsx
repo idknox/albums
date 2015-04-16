@@ -4,12 +4,19 @@
     propTypes: {
       album: React.PropTypes.object.isRequired
     },
-    
+
     render: function() {
-      return (
-        <li className="album">
-            {this.props.album.artist}
-        </li>
+      var album = this.props.album
+      var albumStyle = {
+          backgroundImage: 'url(' + album.image_url + ')'
+      };
+
+        return (
+        <div className="col-sm-4 album">
+            <div className="album-header">{album.title}</div>
+            <div className="album-content" style={albumStyle}>{album.artist}</div>
+            <div className="album-footer">{album.artist}</div>
+        </div>
       );
     }
   });
@@ -23,23 +30,24 @@
     },
 
     componentDidMount: function() {
-         window.AlbumAPI.get_albums().then(function (data) {
-            console.log(data)
-            //this.setState(data);
-        });
+         window.AlbumAPI.get_albums().then(function (response) {
+            this.setState(response);
+        }.bind(this));
     },
-    
+
     render: function() {
       return (
-        <ul className="albums">
-        {
+        <div className="albums">
+          <div class="row">
+            {
         this.state.albums.map(function(album, i) {
           return (
             <Album album={ album } key={ i } />
           )
         }.bind(this))
       }
-        </ul>
+          </div>
+        </div>
       );
     }
   });
