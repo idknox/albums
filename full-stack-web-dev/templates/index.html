@@ -14,9 +14,15 @@
       <div class="row bar">
         <div class="col-sm-4 col-sm-offset-4 title">
             <h1>Albums</h1>
+            <input type="text" id="search" placeholder="Search by Album/Artist/Year"/>
         </div>
       </div>
       <div id="albums-container"></div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4" id="no-albums">
+                <h1>No Albums Found</h1>
+            </div>
+        </div>
     </div>
 
     <!-- ReactJS resources -->
@@ -34,6 +40,7 @@
 
     <!-- Project API -->
     <script type="text/javascript" src={{ url_for('static', filename="js/api.js")}}></script>
+    <script type="text/javascript" src={{ url_for('static', filename="js/filter.js")}}></script>
     <!-- Project App -->
     <script type="text/jsx" src={{ url_for('static', filename="js/app.jsx")}}></script>
   </body>
