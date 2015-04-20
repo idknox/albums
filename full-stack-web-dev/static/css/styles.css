@@ -39,6 +39,7 @@ body {
 
 .album {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .album-header, .album-footer {
@@ -79,3 +80,20 @@ body {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+.modal-content {
+  width: 500px;
+  margin-left: 50px;
+}
+.modal-content > .album {
+  margin-bottom: 0;
+}
+
+.modal-content > .album >.album-content {
+  height: 500px;
+}
+
+.modal-content > .album >.album-content > .ribbon {
+  left: 395px;
+}
+

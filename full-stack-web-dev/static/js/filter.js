@@ -5,9 +5,9 @@ $.expr[':'].containsCaseInsensitive = function (a, i, m) {
 
 $('#search').on('keyup', function () {
     var search = $(this).val();
-    var albums = $('.album');
+    var albums = $('.album-container');
     var albumsContainer = $('#albums-container');
-    var results = $('.album:containsCaseInsensitive(' + search + ')');
+    var results = $('.album-container:containsCaseInsensitive(' + search + ')');
 
 
     albums.hide().addClass('hidden');

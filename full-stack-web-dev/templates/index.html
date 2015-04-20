@@ -14,7 +14,7 @@
       <div class="row bar">
         <div class="col-sm-4 col-sm-offset-4 title">
             <h1>Albums</h1>
-            <input type="text" id="search" placeholder="Search by Album/Artist/Year"/>
+            <input type="text" id="search" placeholder="Search by Title/Artist/Year"/>
         </div>
       </div>
       <div id="albums-container"></div>
@@ -24,7 +24,12 @@
             </div>
         </div>
     </div>
-
+    <div class="modal fade" tabindex="-1" id="albumModal" aria-labelledby="albumModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content" id="albumModalContent">
+        </div>
+      </div>
+    </div>
     <!-- ReactJS resources -->
     <!-- https://facebook.github.io/react/docs/getting-started.html -->
     <script src={{ url_for('static', filename="js/react-0.13.1/build/JSXTransformer.js") }}></script>

@@ -5,21 +5,24 @@
             album: React.PropTypes.object.isRequired
         },
 
+        displayAlbum: function () {
+            React.render(<Album album={this.props.album}/>, document.getElementById('albumModalContent'))
+        },
+
         render: function () {
-            var album = this.props.album
+            var album = this.props.album;
             var albumStyle = {
                 backgroundImage: 'url(' + album.image_url + ')'
             };
+
             return (
-                <a href={"album/" + album._id}>
-                    <div className="col-sm-4 album">
-                        <div className="album-header">{album.title}</div>
-                        <div className="album-content" style={albumStyle}>
-                            <div className="ribbon">{album.year}</div>
-                        </div>
-                        <div className="album-footer">{album.artist}</div>
+                <div className="album" onClick={ this.displayAlbum } data-toggle="modal" data-target="#albumModal">
+                    <div className="album-header">{ album.title }</div>
+                    <div className="album-content" style={ albumStyle }>
+                        <div className="ribbon">{ album.year }</div>
                     </div>
-                </a>
+                    <div className="album-footer">{ album.artist }</div>
+                </div>
             );
         }
     });
@@ -45,7 +48,9 @@
                         {
                             this.state.albums.map(function (album, i) {
                                 return (
-                                    <Album album={ album } key={ i }/>
+                                    <div className="col-sm-4 album-container" key= { i }>
+                                        <Album album={ album } key={ i }/>
+                                    </div>
                                 )
                             }.bind(this))
                         }
